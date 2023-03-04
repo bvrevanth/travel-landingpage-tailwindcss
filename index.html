@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing-page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "480px",
+            md: "768px",
+            lg: "1024px",
+            xl: "1280px",
+            xxl: "1440px",
+          },
+          extend: {
+            colors: {
+              cardsblue: "#ddf5ff",
+              lightblue: "#e4f7fe",
+              footerblue: "#1b6f9e",
+              btndarkblue: "#2079bd",
+              btnlightblue: "#12a0e2",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white text-slate-900">
+    <div class="p-2 bg-gradient-to-r from-cyan-500 to-blue-500"></div>
+    <!-- navbar -->
+    <nav class="container relative mx-auto sm:px-5 lg:px-2 py-5 bg-white">
+      <div class="md:hidden flex justify-between">
+        <i class="fa-solid fa-bars text-4xl md:hidden cursor-pointer"></i>
+        <h1 class="font-bold text-4xl hidden">LOGO</h1>
+        <button
+          class="lg:hidden bg-btndarkblue px-3 py-2 font-normal text-lg text-white rounded bg-gradient-to-r from-cyan-500 to-blue-500 hover:scale-[105%] delay-100"
+        >
+          Contact Us
+        </button>
+      </div>
+      <div class="flex items-center justify-between px-5">
+        <h1 class="font-bold text-3xl sm:hidden md:block">Logo</h1>
+
+        <div
+          class="hidden md:flex md:items-center md:space-x-5 lg:space-x-8 font-normal text-lg"
+        >
+          <a class="text-lg hover:text-btndarkblue hover:delay-100" href="#"
+            >Home</a
+          >
+          <a class="text-lg hover:text-btndarkblue hover:delay-100" href="#"
+            >About Us</a
+          >
+          <a class="text-lg hover:text-btndarkblue hover:delay-100" href="#"
+            >Services</a
+          >
+          <button
+            class="bg-btndarkblue px-3 py-2 font-normal text-lg text-white rounded bg-gradient-to-r from-cyan-500 to-blue-500 hover:scale-[105%] delay-100"
+          >
+            Contact Us
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- hero section -->
+
+    <div
+      class="container mx-auto flex sm:flex-col lg:flex-row justify-between mt-[80px]"
+    >
+      <div
+        class="sm:space-y-7 lg:space-y-0 sm:flex sm:flex-col sm:items-center lg:items-start lg:flex-none lg:w-1/2 lg:space-y-5 px-5 lg:pl-7"
+      >
+        <h4
+          class="sm:text-base lg:text-lg font-bold uppercase text-btndarkblue"
+        >
+          Best destinations around the world
+        </h4>
+        <h1
+          class="sm:text-center lg:text-left sm:text-5xl md:text-6xl lg:text-7xl font-medium sm:leading-normal md:leading-snug lg:leading-tight"
+        >
+          Travel, enjoy and live a new and full life
+        </h1>
+        <p class="sm:text-center lg:text-left text-lg font-medium">
+          Build wicket longer admire do barton vanity itself do in it.Preferred
+          to sportsmen it engrossed listening.Park gate sell they west hard for.
+        </p>
+        <button
+          class="bg-btndarkblue px-3 py-2 font-normal text-lg text-white rounded bg-gradient-to-r from-cyan-500 to-blue-500 hover:scale-[105%] delay-100"
+        >
+          Find out more
+        </button>
+      </div>
+      <div class="sm:mt-[70px] lg:mt-0 lg:w-1/2">
+        <img
+          class="sm:w-[350px] md:w-[500px] ml-[80px]"
+          src="./assets/hero-image.svg"
+          alt="hero-img"
+        />
+      </div>
+    </div>
+
+    <!-- categories -->
+    <div class="categories container mx-auto mt-12">
+      <p class="text-center uppercase text-lg font-bold text-slate-500">
+        category
+      </p>
+      <h3 class="text-center capitalize text-4xl font-medium mt-5">
+        we offer best services
+      </h3>
+      <div
+        class="flex flex-wrap sm:flex-col sm:space-y-8 lg:space-y-0 lg:flex-row lg:justify-between items-center mt-12 px-5 text-center"
+      >
+        <div
+          class="space-y-4 w-48 p-4 rounded hover hover:bg-cardsblue drop-shadow-lg"
+        >
+          <i class="fa-solid fa-passport text-5xl"></i>
+          <h5 class="text-xl font-medium">Passport</h5>
+          <p class="text-lg font-normal text-slate-700">
+            Built wicket longer admire do barton vanity itself do in it.
+          </p>
+        </div>
+        <div
+          class="space-y-4 w-48 p-4 rounded hover:bg-cardsblue drop-shadow-lg"
+        >
+          <!-- <i
+            class="fa-solid fa-square absolute -bottom-4 -left-4 text-5xl -z-10"
+          ></i> -->
+          <i class="fa-solid fa-plane-up text-5xl"></i>
+          <h5 class="text-xl font-medium">Air Ticketing</h5>
+          <p class="text-lg font-normal text-slate-700">
+            Built wicket longer admire do barton vanity itself do in it.
+          </p>
+        </div>
+        <div
+          class="space-y-4 w-48 p-4 rounded hover hover:bg-cardsblue drop-shadow-lg"
+        >
+          <i class="fa-brands fa-cc-visa text-5xl"></i>
+          <h5 class="text-xl font-medium">Visas</h5>
+          <p class="text-lg font-normal text-slate-700">
+            Built wicket longer admire do barton vanity itself do in it.
+          </p>
+        </div>
+        <div
+          class="space-y-4 w-48 p-4 rounded hover hover:bg-cardsblue drop-shadow-lg"
+        >
+          <i class="fa-solid fa-book-atlas text-5xl"></i>
+          <h5 class="text-xl font-medium">Tours</h5>
+          <p class="text-lg font-normal text-slate-700">
+            Built wicket longer admire do barton vanity itself do in it.
+          </p>
+        </div>
+        <div
+          class="space-y-4 w-48 p-4 rounded hover hover:bg-cardsblue drop-shadow-lg"
+        >
+          <i class="fa-solid fa-graduation-cap text-5xl"></i>
+          <h5 class="text-xl font-medium">Overseas Education</h5>
+          <p class="text-lg font-normal text-slate-700">
+            Built wicket longer admire do barton.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- About us -->
+    <div
+      class="container mx-auto flex sm:flex-col lg:flex-row items-center justify-around sm:px-3 lg:px-5 mt-[100px]"
+    >
+      <h2
+        class="sm:hidden lg:block -rotate-90 text-8xl font-black uppercase text-lightblue ml-[-200px]"
+      >
+        Aboutus
+      </h2>
+      <div class="sm:flex sm:flex-col sm:items-center lg:w-[30%] space-y-5">
+        <h4 class="sm:text-center lg:text-left text-5xl font-bold capitalize">
+          your website needs a new look in 2018
+        </h4>
+        <p class="sm:text-center lg:text-left text-base font-medium">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum alias
+          totam excepturi officiis nemo commodi.
+        </p>
+        <button
+          class="bg-btndarkblue px-3 py-2 font-normal text-base text-white rounded lg:ml-[200px] bg-gradient-to-r from-cyan-500 to-blue-500"
+        >
+          Read More
+        </button>
+      </div>
+      <div
+        class="sm:flex sm:flex-col lg:no-flex sm:items-center sm:mt-12 lg:mt-0 lg:w-[30%] space-y-4 font-normal text-lg"
+      >
+        <img
+          class="md:w-auto w-[400px] rounded drop-shadow-2xl"
+          src="./assets/couple-airport.jpg"
+          alt="couple-airport"
+        />
+        <p
+          class="md:text-center sm:w-[400px] md:w-[500px] lg:w-auto lg:text-left"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+          consequuntur asperiores delectus architecto dolore doloremque
+          assumenda ut maiores neque! Dolores sunt aliquam.
+        </p>
+        <p
+          class="md:text-center sm:w-[400px] md:w-[500px] lg:w-auto lg:text-left"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+          molestiae, at quo ex quos magnam!
+        </p>
+      </div>
+    </div>
+
+    <!-- why we are best -->
+    <div
+      class="bg-lightblue container mx-auto sm:mt-[100px] lg:mt-[100px] sm:py-7 sm:px-3 lg:px-0 lg:py-0"
+    >
+      <div class="flex sm:flex-col lg:flex-row justify-around items-center">
+        <div
+          class="relative sm:w-auto lg:w-[400px] lg:-mt-[150px] sm:space-y-5 lg:space-y-5"
+        >
+          <h4
+            class="sm:text-center lg:text-left text-4xl font-medium text-btndarkblue"
+          >
+            Why we are best
+          </h4>
+          <p
+            class="sm:text-center lg:text-left text-base font-medium text-slate-500 mt-1"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            molestias sed molestiae et cupiditate accusantium.
+          </p>
+          <img
+            class="sm:hidden lg:block w-auto absolute top-[150px] rounded drop-shadow-2xl"
+            src="./assets/travel lady.jpg"
+            alt=""
+          />
+        </div>
+        <div class="flex flex-col w-[350px] space-y-8 py-7">
+          <div class="space-x-5 flex">
+            <i class="fa-solid fa-circle text-4xl text-btndarkblue"></i>
+            <div>
+              <h6 class="text-lg font-bold">24X7 SERVICE</h6>
+              <p class="text-base font-medium text-slate-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+                quam.Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </div>
+          <div class="space-x-5 flex">
+            <i class="fa-solid fa-circle text-4xl text-btndarkblue"></i>
+            <div>
+              <h6 class="text-lg font-bold">DEDICATED TEAM</h6>
+              <p class="text-base font-medium text-slate-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+                quam.Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </div>
+          <div class="space-x-5 flex">
+            <i class="fa-solid fa-circle text-4xl text-btndarkblue"></i>
+            <div>
+              <h6 class="text-lg font-bold">QUICK RESULTS</h6>
+              <p class="text-base font-medium text-slate-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+                quam!Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials section -->
+    <div
+      class="container mx-auto flex sm:flex-col lg:flex-row justify-around items-center mt-[100px] p-5"
+    >
+      <div class="sm:text-center lg:text-left">
+        <h6 class="uppercase text-lg font-bold text-slate-500">teatimonials</h6>
+        <h4 class="capitalize text-4xl font-bold mt-2">
+          What people say about us
+        </h4>
+        <div class="sm:mt-5 lg:mt-[100px]">
+          <i class="fa-solid fa-circle text-xs"></i>
+          <i class="fa-solid fa-circle text-xs text-slate-500"></i>
+          <i class="fa-solid fa-circle text-xs text-slate-500"></i>
+        </div>
+      </div>
+      <div class="relative sm:mt-12 lg:mt-0">
+        <div
+          class="sm:w-auto lg:w-[320px] rounded bg-white p-4 border-[1px] border-slate-100 drop-shadow-xl"
+        >
+          <p class="text-slate-500 font-medium text-base">
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            iusto nemo recusandae autem explicabo"
+          </p>
+          <h6 class="mt-2 font-bold text-lg">Mike taylor</h6>
+          <h5 class="mt-1 font-normal text-lg">Delhi, India</h5>
+        </div>
+        <div
+          class="md:w-auto lg:w-[320px] rounded bg-white p-4 absolute top-[80px] left-[28px] border-[1px] border-slate-100 -z-10 drop-shadow-md"
+        >
+          <p class="text-slate-500 font-medium text-base">
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            iusto nemo recusandae autem explicabo"
+          </p>
+          <h6 class="mt-2 font-bold text-lg">Chris Thomas</h6>
+          <h5 class="mt-1 font-normal text-lg">CEO of Red Button</h5>
+        </div>
+      </div>
+      <div
+        class="flex sm:-rotate-90 sm:mt-[120px] lg:mt-0 lg:rotate-0 flex-col space-y-8"
+      >
+        <i
+          class="fa-solid fa-chevron-up text-2xl hover:scale-125 hover:delay-100 hover:text-btndarkblue"
+        ></i>
+        <i
+          class="fa-solid fa-chevron-down text-2xl hover:scale-125 hover:delay-100 hover:text-btndarkblue"
+        ></i>
+      </div>
+    </div>
+
+    <!-- video -->
+    <div
+      class="container mx-auto relative md:mt-[60px] sm:mt-[100px] lg:mt-[200px]"
+    >
+      <div
+        class="bg-[url('./assets/cottages.jpg')] h-[350px] bg-no-repeat bg-cover bg-center"
+      >
+        <h6
+          class="text-center uppercase text-lg font-bold text-slate-500 text-white pt-4"
+        >
+          Discover
+        </h6>
+        <h4
+          class="text-center text-center capitalize text-4xl font-medium mt-5 text-white"
+        >
+          Watch our video tour
+        </h4>
+        <img class="w-[70px] mx-auto" src="./assets/video-asset2.svg" alt="" />
+      </div>
+      <div
+        class="aspect-w-16 aspect-h-9 absolute -bottom-4 sm:left-[20%] md:left-[35%] lg:left-[40%] hover:scale-125 delay-100"
+      >
+        <iframe
+          class="rounded drop-shadow-xl"
+          src="https://www.youtube.com/embed/r9jwGansp1E"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- stats -->
+
+    <div
+      class="container mx-auto flex sm:flex-col sm:space-y-[60px] lg:space-y-0 lg:flex-row flex-wrap items-center justify-around text-center px-5 mt-[100px]"
+    >
+      <div class="space-y-4">
+        <i class="fa-solid fa-face-grin-stars text-5xl"></i>
+        <h4 class="text-2xl font-medium">120,859</h4>
+        <p class="text-lg font-medium text-slate-700 uppercase">
+          happy travellers
+        </p>
+      </div>
+      <div class="space-y-4">
+        <i class="fa-solid fa-gopuram text-5xl"></i>
+        <h4 class="text-2xl font-medium">2594</h4>
+        <p class="text-lg font-medium text-slate-700 uppercase">
+          satisfied tours
+        </p>
+      </div>
+      <div class="space-y-4">
+        <i class="fa-solid fa-earth-americas text-5xl"></i>
+        <h4 class="text-2xl font-medium">854</h4>
+        <p class="text-lg font-medium text-slate-700 uppercase">destination</p>
+      </div>
+      <div class="space-y-4">
+        <i class="fa-solid fa-building text-5xl"></i>
+        <h4 class="text-2xl font-medium">978</h4>
+        <p class="text-lg font-medium text-slate-700 uppercase">
+          hotel resorts
+        </p>
+      </div>
+    </div>
+
+    <!-- cards -->
+    <div class="container mx-auto mt-[100px] md:px-5">
+      <h6 class="text-center uppercase text-lg font-bold text-slate-500">
+        we offer
+      </h6>
+      <h4 class="text-center text-center capitalize text-4xl font-medium mt-5">
+        popular tour package
+      </h4>
+      <img
+        class="mx-auto w-[50px] mt-2"
+        src="./assets/asset-black.svg"
+        alt=""
+      />
+
+      <div
+        class="package-cards flex sm:flex-col sm:space-y-12 lg:space-y-0 lg:flex-row justify-between items-center flex-wrap mt-[50px]"
+      >
+        <i
+          class="fa-regular fa-circle-left hidden lg:block text-3xl hover:text-btndarkblue hover:delay-100"
+        ></i>
+
+        <div
+          class="sm:w-[350px] sm:h-[400px] lg:w-[250px] lg:h-[320px] border-[1px] border-slate-100 relative hover:scale-[105%] hover:delay-100 rounded cursor-pointer drop-shadow-md"
+        >
+          <p class="absolute bg-amber-400 top-3 ml-2 px-2 py-1 rounded">
+            Holiday
+          </p>
+
+          <img src="./assets/package-card-three.jpg" alt="venice-location" />
+          <div class="space-y-4 mt-5 text-center">
+            <p class="text-lg font-medium">$299/person</p>
+            <h6 class="text-btndarkblue capitalize text-2xl font-medium">
+              nature of phuket
+            </h6>
+            <p class="text-lg font-normal">4 days / 5 night</p>
+          </div>
+        </div>
+        <div
+          class="sm:w-[350px] sm:h-[400px] lg:w-[250px] lg:h-[320px] border-[1px] border-slate-100 relative hover:scale-[105%] hover:delay-100 rounded cursor-pointer drop-shadow-md"
+        >
+          <p class="absolute bg-amber-400 top-3 ml-2 px-2 py-1 rounded">
+            Holiday
+          </p>
+
+          <img src="./assets/package-card-two.jpg" alt="venice-location" />
+          <div class="space-y-4 mt-5 text-center">
+            <p class="text-lg font-medium">$299/person</p>
+            <h6 class="text-btndarkblue capitalize text-2xl font-medium">
+              world tour of paris
+            </h6>
+            <p class="text-lg font-normal">3 days / 4 night</p>
+          </div>
+        </div>
+        <div
+          class="sm:w-[350px] sm:h-[400px] lg:w-[250px] lg:h-[320px] border-[1px] border-slate-100 relative hover:scale-[105%] hover:delay-100 rounded cursor-pointer drop-shadow-md"
+        >
+          <p class="absolute bg-amber-400 top-3 ml-2 px-2 py-1 rounded">
+            Holiday
+          </p>
+
+          <img src="./assets/package-card-four.jpg" alt="venice-location" />
+          <div class="space-y-4 mt-5 text-center">
+            <p class="text-lg font-medium">$299/person</p>
+            <h6 class="text-btndarkblue capitalize text-2xl font-medium">
+              culture of bali
+            </h6>
+            <p class="text-lg font-normal">7 days / 8 night</p>
+          </div>
+        </div>
+        <i
+          class="fa-regular fa-circle-right hidden lg:block text-3xl hover:text-btndarkblue hover:delay-100"
+        ></i>
+      </div>
+      <div
+        class="text-center mt-12 space-x-[100px] text-5xl text-slate-600 lg:hidden"
+      >
+        <i class="fa-regular fa-circle-left hover:text-btndarkblue"></i>
+        <i class="fa-regular fa-circle-right hover:text-btndarkblue"></i>
+      </div>
+    </div>
+
+    <!-- tourism cards -->
+    <div class="container mx-auto mt-[100px]">
+      <h6 class="text-center uppercase text-lg font-bold text-slate-500">
+        Destination
+      </h6>
+      <h4 class="text-center text-center capitalize text-4xl font-medium mt-5">
+        popular tourism countries
+      </h4>
+      <img
+        class="mx-auto w-[50px] mt-2"
+        src="./assets/asset-black.svg"
+        alt=""
+      />
+      <div
+        class="flex flex-wrap sm:flex-col sm:space-y-12 lg:space-y-0 lg:flex-row justify-around items-center mt-12"
+      >
+        <div
+          class="bg-[url('./assets/dest-one.jpg')] sm:h-[480px] sm:w-[350px] lg:h-[320px] lg:w-[250px] bg-no-repeat bg-cover bg-center flex items-end justify-around text-white rounded cursor-pointer drop-shadow-xl hover:scale-[105%] hover:delay-100"
+        >
+          <div class="space-y-2 pb-2">
+            <p class="text-xl font-bold">Thailand</p>
+            <p class="text-lg font-medium">$799-$899</p>
+          </div>
+          <i class="fa-regular fa-circle-right text-2xl pb-2"></i>
+        </div>
+        <div
+          class="bg-[url('./assets/dest-two.jpg')] sm:h-[480px] sm:w-[350px] lg:h-[320px] lg:w-[250px] bg-no-repeat bg-cover bg-center flex items-end justify-around text-white rounded cursor-pointer drop-shadow-xl hover:scale-[105%] hover:delay-100"
+        >
+          <div class="space-y-2 pb-2">
+            <p class="text-xl font-bold">Thailand</p>
+            <p class="text-lg font-medium">$799-$899</p>
+          </div>
+          <i class="fa-regular fa-circle-right text-2xl pb-3"></i>
+        </div>
+        <div
+          class="bg-[url('./assets/dest-three.jpg')] sm:h-[480px] sm:w-[350px] lg:h-[320px] lg:w-[250px] bg-no-repeat bg-cover bg-center flex items-end justify-around text-white rounded cursor-pointer drop-shadow-xl hover:scale-[105%] hover:delay-100"
+        >
+          <div class="space-y-2 pb-2">
+            <p class="text-xl font-bold">Thailand</p>
+            <p class="text-lg font-medium">$799-$899</p>
+          </div>
+          <i class="fa-regular fa-circle-right text-2xl pb-2"></i>
+        </div>
+        <div
+          class="sm:h-[480px] sm:w-[350px] lg:h-[320px] lg:w-[250px] bg-no-repeat text-white rounded border-[1px] border-slate-300 cursor-pointer"
+        >
+          <div class="bg-btndarkblue sm:h-[70px] lg:h-[50px] text-center py-2">
+            <h6 class="text-xl font-medium">Get Your Guide</h6>
+            <img
+              class="w-[50px] mx-auto"
+              src="./assets/video-asset2.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="text-center sm:flex sm:flex-col lg:flex-none lg:items-center sm:mt-2 lg:mt-5 space-y-3 sm:p-5 lg:p-0"
+          >
+            <input
+              class="border-[1px] border-slate-300 pl-2 sm:h-[50px] lg:h-auto"
+              type="text"
+              name=""
+              placeholder="First Name"
+              id=""
+            />
+            <input
+              class="border-[1px] border-slate-300 pl-2 sm:h-[50px] lg:h-auto"
+              type="text"
+              name=""
+              placeholder="Email address "
+              id=""
+            />
+            <input
+              class="border-[1px] border-slate-300 pl-2 sm:h-[50px] lg:h-auto"
+              type="text"
+              name=""
+              placeholder="Phone number"
+              id=""
+            />
+            <input
+              class="border-[1px] border-slate-300 pl-2 sm:h-[100px] lg:h-[50px]"
+              type="text"
+              name=""
+              placeholder="Message"
+              id=""
+            />
+            <button
+              class="px-2 sm:py-3 lg:py-1 rounded bg-gradient-to-r from-cyan-500 to-blue-500 hover:scale-[102%] hover:delay-100 rounded cursor-pointer"
+            >
+              SUBMIT
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map - location -->
+    <div
+      class="container mx-auto bg-[url('./assets/map.png')] h-[320px] bg-no-repeat bg-cover bg-center mt-[100px]"
+    ></div>
+    <footer
+      class="container mx-auto bg-footerblue sm:h-auto lg:h-[300px] flex sm:flex-col lg:flex-row justify-around items-center text-white sm:text-center lg:text-left sm:space-y-10 lg:space-y-0 sm:py-8 lg:py-0"
+    >
+      <div class="flex flex-col space-y-3">
+        <h4 class="mb-1 text-xl font-medium">Quick Links</h4>
+        <a href="#">Home</a>
+        <a href="#">About Company</a>
+        <a href="#">Testimonials</a>
+        <a href="#">Infrastructure</a>
+      </div>
+      <div class="flex flex-col space-y-3">
+        <h4 class="mb-1 text-xl font-medium">Support</h4>
+        <a href="#">Get Strated</a>
+        <a href="#">Career</a>
+        <a href="#">Help</a>
+        <a href="#">Community</a>
+      </div>
+      <div class="flex flex-col space-y-3">
+        <h4 class="mb-1 text-xl font-medium">Address</h4>
+        <a href="#">14.1 Ellis bridge ST,</a>
+        <a href="#">auckland 3500, Australia</a>
+        <a href="#">+3456-986</a>
+        <a href="#">contact@demo.com</a>
+      </div>
+      <div class="">
+        <h5 class="text-xl mb-3">Subscribe to our newsletter</h5>
+        <input class="h-[32px]" type="text" placeholder="Your Email" />
+        <i class="fa-solid fa-envelope p-2 bg-amber-400 rounded"></i>
+      </div>
+    </footer>
+  </body>
+</html>
